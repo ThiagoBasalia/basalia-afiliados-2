@@ -1,90 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mitolyn - Suporte à Saúde</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        html, body {
-            height: 100%;
+        /* BODY - Fundo suave e tipografia profissional */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             align-items: center;
-            background-color: #f9f9f9;
+            min-height: 100vh;
         }
-        .container {
-            width: 100%;
+
+        /* CARD - Melhor alinhamento e sombra suave */
+        .card {
+            background-color: #ffffff;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
             max-width: 600px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            box-sizing: border-box;
-        }
-        h1, h2 {
-            color: #1a73e8;
-            text-align: center;
-        }
-        .cta-button {
-            display: block;
             width: 100%;
-            padding: 12px;
-            margin: 20px 0;
-            background-color: #1a73e8;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
             text-align: center;
-            font-size: 18px;
+        }
+
+        h1 {
+            color: #1a73e8;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        /* BOTÃO CTA - Cantos arredondados, cor viva e sombra */
+        .btn {
+            background-color: #1a73e8;
+            color: #ffffff;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            margin-bottom: 24px;
         }
-        .cta-button:hover {
-            background-color: #135cb1;
+
+        .btn:hover {
+            background-color: #1558b1;
         }
-        .trust-logos {
+
+        /* IMAGENS - Melhor disposição e alinhamento */
+        .images {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
+            gap: 12px;
+            margin-bottom: 24px;
         }
-        .trust-logos img {
-            width: 50px;
-            height: 50px;
+
+        .images img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-        .footer {
-            margin-top: 20px;
-            font-size: 12px;
-            text-align: center;
-            color: #777;
+
+        /* LINKS DE POLÍTICA - Aparência mais discreta */
+        .links {
+            font-size: 14px;
+            color: #888;
         }
-        a {
+
+        .links a {
             color: #1a73e8;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #1558b1;
+        }
+
+        footer {
+            font-size: 12px;
+            color: #888;
+            margin-top: 16px;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Mitolyn - Suporte à Saúde</h1>
-    <p>Descubra o poder do Mitolyn para o suporte ao açúcar no sangue e bem-estar geral. Resultados rápidos e comprovados!</p>
-    
-    <button class="cta-button">Compre Agora e Ganhe $134.46 de Comissão!</button>
-
-    <div class="trust-logos">
-        <img src="https://i.imgur.com/F3PjWXt.png" alt="Compra Segura">
-        <img src="https://i.imgur.com/YtWw3Tk.png" alt="SSL Seguro">
-        <img src="https://i.imgur.com/BF0pdX9.png" alt="Garantia de Reembolso">
+    <div class="card">
+        <h1>Mitolyn - Suporte à Saúde</h1>
+        <p>
+            Descubra o poder do Mitolyn para o suporte ao açúcar no sangue e bem-estar geral.<br />
+            Resultados rápidos e comprovados!
+        </p>
+        <a href="#" class="btn">Compre Agora e Ganhe $134.46 de Comissão!</a>
+        <div class="images">
+            <img src="https://via.placeholder.com/80x80" alt="Imagem 1" />
+            <img src="https://via.placeholder.com/80x80" alt="Imagem 2" />
+            <img src="https://via.placeholder.com/80x80" alt="Imagem 3" />
+        </div>
+        <div class="links">
+            <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a>
+        </div>
+        <footer>
+            © 2025 Mitolyn. Todos os direitos reservados.
+        </footer>
     </div>
-
-    <div class="footer">
-        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
-        <p>© 2025 Mitolyn. Todos os direitos reservados.</p>
-    </div>
-</div>
 
 </body>
 </html>
